@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: StartingRoom
   m_EditorClassIdentifier: 
-  description: description of the first room
+  description: These are the bedchambers. Four sleeping quarters are inset into the
+    walls, each containing bland, beige bedsheets. The room is otherwise completely
+    empty.
   roomName: 
