@@ -7,6 +7,7 @@ public class GameMaster : MonoBehaviour {
 
     [HideInInspector] public RoomNavigation roomNavigation;
     List<string> actionLog = new List<string>();
+    [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
 
     // Start is called before the first frame update
@@ -25,8 +26,14 @@ public class GameMaster : MonoBehaviour {
     }
 
     public void DisplayRoomText() {
-        string combinedText = roomNavigation.currentRoom.description + "\n";
+        UnpackRoom();
+        string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
+        string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
         LogStringWithReturn(combinedText);
+    }
+
+    private void UnpackRoom() {
+        roomNavigation.UnpackExitsInRoom();
     }
 
     public void LogStringWithReturn(string toAdd) {
