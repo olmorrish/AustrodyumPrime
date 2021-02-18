@@ -17,3 +17,5 @@ MonoBehaviour:
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: The keycard is very rectangular.
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You take the keycard.

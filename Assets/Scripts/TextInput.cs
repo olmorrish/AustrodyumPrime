@@ -1,16 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TextInput : MonoBehaviour {
 
     private GameMaster gameMaster;
+    public TextMeshProUGUI inputFieldText;
     public TMPro.TMP_InputField inputField;
 
     private void Awake() {
         gameMaster = GetComponent<GameMaster>();
         inputField.onEndEdit.AddListener(AcceptStringInput);    //add a listener to the end-event on the input field, and call AcceptStringInput then
+    }
+
+    private void Start() {
+        inputFieldText.text = "";
     }
 
     public void AcceptStringInput(string userInput) {

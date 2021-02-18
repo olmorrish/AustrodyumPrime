@@ -52,6 +52,9 @@ public class GameMaster : MonoBehaviour {
                 if(interactionForInteractable.inputAction.keyword.Equals("examine")){
                     interactbleItems.examineDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
                 }
+                if (interactionForInteractable.inputAction.keyword.Equals("take")) {
+                    interactbleItems.takeDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
             }
         }
 
