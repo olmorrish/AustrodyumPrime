@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour {
 
     [HideInInspector] public RoomNavigation roomNavigation;
+    [HideInInspector] public InteractableItems interactbleItems;
     List<string> actionLog = new List<string>();
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
@@ -14,6 +15,7 @@ public class GameMaster : MonoBehaviour {
     // Start is called before the first frame update
     void Awake() {
         roomNavigation = GetComponent<RoomNavigation>();
+        interactbleItems = GetComponent<InteractableItems>();
     }
 
     private void Start() {
@@ -36,11 +38,38 @@ public class GameMaster : MonoBehaviour {
 
     private void UnpackRoom() {
         roomNavigation.UnpackExitsInRoom();
+        PrepareObjectsToTakeOrExamine(roomNavigation.currentRoom);
+    }
+
+    private void PrepareObjectsToTakeOrExamine(Room currrentRoom) {
+        foreach(InteractableObject interactable in currrentRoom.interactableObjectsInRoom) {
+            string descriptionNotInInventory = interactbleItems.GetItemsNotInInventory(currrentRoom, interactable);
+            if(descriptionNotInInventory != null) {
+                interactionDescriptionsInRoom.Add(descriptionNotInInventory); //add the item decriptions to the unpacked description
+            }
+
+            foreach(Interaction interactionForInteractable in interactable.interactions) {
+                if(interactionForInteractable.inputAction.keyword.Equals("examine")){
+                    interactbleItems.examineDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
+            }
+        }
+
     }
 
     private void ClearCollectionsForNewRoom() {
+        interactbleItems.ClearCollections();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
+    }
+
+    public string TestVerbDictionaryWithNoun(Dictionary<string, string> verbDictionary, string verb, string noun) {
+        if (verbDictionary.ContainsKey(noun)) {
+            return verbDictionary[noun];
+        }
+        else {
+            return "You can't " + verb + " " + noun;
+        }
     }
 
     public void LogStringWithReturn(string toAdd) {

@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 86990937}
   - component: {fileID: 86990935}
   - component: {fileID: 86990938}
+  - component: {fileID: 86990939}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -180,10 +181,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomNavigation: {fileID: 0}
+  interactbleItems: {fileID: 0}
   interactionDescriptionsInRoom: []
   displayText: {fileID: 437120940}
   inputActions:
   - {fileID: 11400000, guid: fdb133ee1c97f024998ec342e1c79144, type: 2}
+  - {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
 --- !u!114 &86990938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +200,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputField: {fileID: 1799493963}
+--- !u!114 &86990939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86990934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c9bb63e63957f746b0dcf0868178155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nounsInRoom: []
 --- !u!1 &172454111
 GameObject:
   m_ObjectHideFlags: 0
