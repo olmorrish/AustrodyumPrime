@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Hallway
   m_EditorClassIdentifier: 
-  description: You are in a hallway.
+  description: "You are in a hallway at the back of the ship. \nThere is a sealed
+    door to the navigation room, locked by a yellow card scanner."
   roomName: hallway
   exits:
   - keyString: bedchambers
