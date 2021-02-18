@@ -12,21 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: NavigationRoom
   m_EditorClassIdentifier: 
-  description: 'The door opens. This is the navigation room, at the center of the
-    ship.
-
-    The passage to the aft is locked.'
+  description: "The door opens. This is the navigation room, at the center of the
+    ship.\nThe passage back to the aft is locked. \nThe bridge lies opposite the
+    aft hallway."
   roomName: NavigationRoom
   exits:
   - keyString: port
-    exitDescription: There is a closed door to the port side.
-    valueRoom: {fileID: 0}
+    exitDescription: There is an open door to the port side of the room.
+    valueRoom: {fileID: 11400000, guid: 652ef7b2bf921404091bc87cb93dde13, type: 2}
   - keyString: starboard
-    exitDescription: There is an open door to the starboard side, leading to another
-      hallway.
-    valueRoom: {fileID: 0}
-  - keyString: 
-    exitDescription: 
-    valueRoom: {fileID: 0}
+    exitDescription: There is an open door to the starboard side of the room.
+    valueRoom: {fileID: 11400000, guid: 2e74a67876d7b2e428ba3169bb2d0798, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 253e7896affeb2241b055c6b68faed62, type: 2}
+  - {fileID: 11400000, guid: b65398a020e711f4aa151c3d0e166612, type: 2}

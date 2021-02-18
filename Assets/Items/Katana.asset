@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
+  m_Name: Katana
+  m_EditorClassIdentifier: 
+  noun: katana
+  description: 'The armoury seems to be picked clean, save for the captain''s decorational
+    katana on the wall. '
+  interactions:
+  - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
+    textResponse: Built to comemorate the creation of the penguin-shipping craft,
+      the katana isn't built for combat, though it'll do in a pinch. It has an ornate
+      handle wrapped with silver cloth. The logo of the Austrodyum Prime - a penguin
+      with a crown - has been laser-etched into the flat of the blade.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
+    textResponse: 'You lick the sharp part of the blade, like an absolute bufoon.
+      A metalic taste floods your mouth, but it''s not the steel of the blade, it''s
+      your own blood, obviously. You fool. '
+    actionResponse: {fileID: 0}

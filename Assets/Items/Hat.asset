@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
-  m_Name: Console
+  m_Name: Hat
   m_EditorClassIdentifier: 
-  noun: console
-  description: A navigation console sits in the middle of the room.
+  noun: hat
+  description: One of the captain's cowboy hats hangs from a peg on the wall. The
+    second peg seems to be missing.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: This type of console is typically used to project 3D images of
-      ships for combat visualizations. However, this is an animal cargo ship, and
-      so the hologram is less combat-oriented. A 3D model of a penguin - static in
-      its pose - bounces and spins around the range of the holotable, tumbling around
-      like a screensaver icon.
+    textResponse: The hat belongs to Dingo, captain of the Austrodyum Prime. It's
+      made of plain, flat leather, with no frills or flair. You wonder briefly where
+      the missing hat went - the captain always kept his two spares together.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: The metal of the console is cold against your tounge. It is a pleasant
-      sensation.
+    textResponse: The hat has a leathery, rough texture that dries your tounge as
+      you scrape it over the surface of the western headwear.
     actionResponse: {fileID: 0}

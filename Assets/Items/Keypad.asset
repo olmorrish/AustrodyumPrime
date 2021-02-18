@@ -10,19 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
-  m_Name: Console
+  m_Name: Keypad
   m_EditorClassIdentifier: 
-  noun: console
-  description: A navigation console sits in the middle of the room.
+  noun: keypad
+  description: The door to the bridge is locked by a keypad.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: This type of console is typically used to project 3D images of
-      ships for combat visualizations. However, this is an animal cargo ship, and
-      so the hologram is less combat-oriented. A 3D model of a penguin - static in
-      its pose - bounces and spins around the range of the holotable, tumbling around
-      like a screensaver icon.
+    textResponse: 'The keypad requires a 50-digit code to open, which only the captain
+      knows. Altrnatively, an action-movie style strike to the pad might break it
+      open. You;d need a cool enough weapon though. '
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: The metal of the console is cold against your tounge. It is a pleasant
-      sensation.
+    textResponse: 'The keypad tastes exactly like the sweaty fingers of your fellow
+      crewmates. This is a taste that you are somehow familiar with. '
     actionResponse: {fileID: 0}

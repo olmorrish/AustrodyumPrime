@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
+  m_Name: StarboardHallway
+  m_EditorClassIdentifier: 
+  description: 'You enter the starboard hallway. '
+  roomName: starboardhallway
+  exits:
+  - keyString: navigation
+    exitDescription: The hall leads to a door marked "Navigation".
+    valueRoom: {fileID: 11400000, guid: 146903ba8fc97174eb5df0d5139d4a55, type: 2}
+  - keyString: armoury
+    exitDescription: The weaponry entrance is to one side of the hall.
+    valueRoom: {fileID: 11400000, guid: f45cadac2eead1c4184d5386701efa90, type: 2}
+  - keyString: cargohold
+    exitDescription: 'The cargohold is on the other side of the hall. '
+    valueRoom: {fileID: 0}
+  interactableObjectsInRoom: []
