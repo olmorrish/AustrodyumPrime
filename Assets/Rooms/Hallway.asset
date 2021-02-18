@@ -15,6 +15,6 @@ MonoBehaviour:
   description: You are in a hallway.
   roomName: hallway
   exits:
-  - keyString: A door lies to the port side.
-    exitDescription: port
+  - keyString: bedchambers
+    exitDescription: 'There is a room to the bedchambers. '
     valueRoom: {fileID: 11400000, guid: be3ced37a69051c45b033c9b83036c50, type: 2}

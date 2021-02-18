@@ -182,6 +182,8 @@ MonoBehaviour:
   roomNavigation: {fileID: 0}
   interactionDescriptionsInRoom: []
   displayText: {fileID: 437120940}
+  inputActions:
+  - {fileID: 11400000, guid: fdb133ee1c97f024998ec342e1c79144, type: 2}
 --- !u!114 &86990938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -695,7 +697,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1799493961}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &856598256
@@ -897,7 +899,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fe9fcb87dc61e46abd041dfe5a3a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 0}
 --- !u!1 &1870643443
 GameObject:
   m_ObjectHideFlags: 0

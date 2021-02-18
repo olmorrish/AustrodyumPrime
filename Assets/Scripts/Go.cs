@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(menuName = "TextAdventure/InputActions/Go")]
+public class Go : InputAction {
+
+    public override void RespondToInput(GameMaster gameMaster, string[] separatedInputWords) {
+        gameMaster.roomNavigation.AttemptToChangeRooms(separatedInputWords[1]);
+    }
+
+}

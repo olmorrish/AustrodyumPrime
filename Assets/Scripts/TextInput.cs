@@ -13,15 +13,20 @@ public class TextInput : MonoBehaviour {
         inputField.onEndEdit.AddListener(AcceptStringInput);    //add a listener to the end-event on the input field, and call AcceptStringInput then
     }
 
-    private void Update() {
-        //if (Input.GetKeyDown) {
-
-        //}
-    }
-
     public void AcceptStringInput(string userInput) {
         userInput = userInput.ToLower();
         gameMaster.LogStringWithReturn(userInput);
+
+        //process input and act if the first is a valid input action
+        char[] delimiterChars = {' '};
+        string[] separatedInput = userInput.Split(delimiterChars);
+
+        foreach (InputAction inputAction in gameMaster.inputActions) {
+            if (separatedInput[0].Equals(inputAction.keyword)) {
+                inputAction.RespondToInput(gameMaster, separatedInput);
+            }
+        }
+
         InputComplete();
     }
 

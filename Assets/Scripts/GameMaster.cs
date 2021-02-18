@@ -9,6 +9,7 @@ public class GameMaster : MonoBehaviour {
     List<string> actionLog = new List<string>();
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
+    public InputAction[] inputActions; //all possible actions, all of which inherit from InputAction abstract class
 
     // Start is called before the first frame update
     void Awake() {
@@ -26,6 +27,7 @@ public class GameMaster : MonoBehaviour {
     }
 
     public void DisplayRoomText() {
+        ClearCollectionsForNewRoom();
         UnpackRoom();
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
         string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
@@ -34,6 +36,11 @@ public class GameMaster : MonoBehaviour {
 
     private void UnpackRoom() {
         roomNavigation.UnpackExitsInRoom();
+    }
+
+    private void ClearCollectionsForNewRoom() {
+        interactionDescriptionsInRoom.Clear();
+        roomNavigation.ClearExits();
     }
 
     public void LogStringWithReturn(string toAdd) {

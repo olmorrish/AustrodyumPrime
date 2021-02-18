@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
-  m_Name: StartingRoom
+  m_Name: Bedchambers
   m_EditorClassIdentifier: 
   description: These are the bedchambers. Four sleeping quarters are inset into the
     walls, each containing bland, beige bedsheets. The room is otherwise completely
     empty.
   roomName: 
   exits:
-  - keyString: starboard
-    exitDescription: You see a doorway to the starboard side.
+  - keyString: door
+    exitDescription: There is a door leading out of the room.
     valueRoom: {fileID: 11400000, guid: c28dd6325d984544f823974193b2869a, type: 2}
