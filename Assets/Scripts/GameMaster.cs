@@ -42,6 +42,8 @@ public class GameMaster : MonoBehaviour {
     }
 
     private void PrepareObjectsToTakeOrExamine(Room currrentRoom) {
+        if (currrentRoom.interactableObjectsInRoom == null)
+            return;
         foreach(InteractableObject interactable in currrentRoom.interactableObjectsInRoom) {
             string descriptionNotInInventory = interactbleItems.GetItemsNotInInventory(currrentRoom, interactable);
             if(descriptionNotInInventory != null) {
@@ -54,6 +56,9 @@ public class GameMaster : MonoBehaviour {
                 }
                 if (interactionForInteractable.inputAction.keyword.Equals("take")) {
                     interactbleItems.takeDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
+                if (interactionForInteractable.inputAction.keyword.Equals("lick")) {
+                    interactbleItems.lickDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
                 }
             }
         }

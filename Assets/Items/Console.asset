@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
+  m_Name: Console
+  m_EditorClassIdentifier: 
+  noun: console
+  description: A navigation console sits in the middle of the room.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
+    textResponse: This type of console is typically used to project 3D images of
+      ships for combat visualizations. However, this is an animal cargo ship, and
+      so the hologram is less combat-oriented. A 3D model of a penguin - static in
+      its pose - bounces and spins around the range of the holotable, tumbling around
+      like a screensaver icon.
+    actionResponse: {fileID: 0}

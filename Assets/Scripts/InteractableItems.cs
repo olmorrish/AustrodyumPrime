@@ -7,6 +7,7 @@ public class InteractableItems : MonoBehaviour {
     private GameMaster gameMaster;
     public Dictionary<string, string> examineDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
+    public Dictionary<string, string> lickDictionary = new Dictionary<string, string>();
     [HideInInspector] public List<string> nounsInRoom = new List<string>();
     private List<string> nounsInInventory = new List<string>();
 
@@ -72,6 +73,7 @@ public class InteractableItems : MonoBehaviour {
     /// </summary>
     public void ClearCollections() {
         examineDictionary.Clear();
+        lickDictionary.Clear();
         nounsInRoom.Clear();
         takeDictionary.Clear();
     }
@@ -103,6 +105,16 @@ public class InteractableItems : MonoBehaviour {
             else {
                 gameMaster.LogStringWithReturn("You're not sure how to use the " + noun + ".");
             }
+        }
+        else {
+            gameMaster.LogStringWithReturn("There is no " + noun + " in your inventory.");
+        }
+    }
+
+    public void LickItem(string[] separatedInput) {
+        string noun = separatedInput[1];
+        if (lickDictionary.ContainsKey(noun)) {
+            gameMaster.LogStringWithReturn(lickDictionary[noun]);
         }
         else {
             gameMaster.LogStringWithReturn("There is no " + noun + " in your inventory.");
