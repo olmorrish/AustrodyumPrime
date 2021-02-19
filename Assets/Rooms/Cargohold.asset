@@ -12,10 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Cargohold
   m_EditorClassIdentifier: 
-  description: You enter the cargohold.
+  description: This is the cargohold. As usual, it's colder than the rest of the
+    ship.
   roomName: cargohold
   exits:
   - keyString: hallway
     exitDescription: A hallway connects to the room's exit.
     valueRoom: {fileID: 11400000, guid: 2e74a67876d7b2e428ba3169bb2d0798, type: 2}
-  interactableObjectsInRoom: []
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 34516d48c2ec84e44ba7e307ce00b378, type: 2}
+  - {fileID: 11400000, guid: 9f8314ee9a47853499a1eb64b8c17401, type: 2}
+  - {fileID: 11400000, guid: 0ebb6659234ecae4c80137aea436c633, type: 2}

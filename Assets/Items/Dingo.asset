@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
+  m_Name: Dingo
+  m_EditorClassIdentifier: 
+  noun: dingo
+  description: The dead body of the captain, Dingo, lies facedown in the middle of
+    the room.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
+    textResponse: Dingo was the captain of the Austrodyum Prime. He appears to be
+      missing his signature cowboy hat and glasses. After some detective work, you
+      realize that this is because he has actually been beheaded, so it would be
+      somewhat difficult to continue wearing a hat. You also conclude that this was
+      likely the cause of death.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
+    textResponse: You give captain Dingo's cowboy boots a good old lick, and your
+      salty tears mingle with the leathery taste. It seems you serve this great man
+      in death much in the same way you did in life.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You put Dingo in your backpack. You stop briefly to wonder how
+      you managed that, but you decide not to think too much about it.
+    actionResponse: {fileID: 0}

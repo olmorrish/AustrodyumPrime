@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
-  m_Name: Keycard
+  m_Name: Journal
   m_EditorClassIdentifier: 
-  noun: keycard
-  description: A yellow plastic keycard lies on the floor.
+  noun: journal
+  description: A journal lies on the floor, near the entrance to the cage.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: The keycard is yellow. Not much more to say about it. I mean, it's
-      a keycard.
+    textResponse: The journal has the logo of the Austrodyum Prime embossed on the
+      cover - a penguin with a crown. It's completely empty except for one page,
+      where in crude barely-legible crayon, someone has written "WE SHALL MARCH AGAIN".
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
-    textResponse: You take the keycard.
+    textResponse: 'You put the journal in your backpack. You remember that you''ve
+      always wanted to take up journaling, but your father never allowed it. '
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 11400000, guid: 67b6ddc57d501964e8ac5e29e43c687d, type: 2}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: It tastes of plastic. Same as always.
+    textResponse: You get one of the blank pages of the journal nice and damp. A
+      job well done.
     actionResponse: {fileID: 0}

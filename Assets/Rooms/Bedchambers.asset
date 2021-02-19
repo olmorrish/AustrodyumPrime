@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Bedchambers
   m_EditorClassIdentifier: 
-  description: These are the bedchambers. Four sleeping quarters are inset into the
-    walls, each containing bland, beige bedsheets. The room is otherwise completely
-    empty.
-  roomName: 
+  description: These are the bedchambers. The room is quiet, and your crewmates are
+    nowhere to be found.
+  roomName: bedchambers
   exits:
-  - keyString: door
-    exitDescription: There is a door leading out of the room.
+  - keyString: hallway
+    exitDescription: There is a door leading out to the aft hallway.
     valueRoom: {fileID: 11400000, guid: c28dd6325d984544f823974193b2869a, type: 2}
+  interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 02e724b9099578642b3e4afa63799036, type: 2}

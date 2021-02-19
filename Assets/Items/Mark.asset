@@ -10,21 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
-  m_Name: Keycard
+  m_Name: Mark
   m_EditorClassIdentifier: 
-  noun: keycard
-  description: A yellow plastic keycard lies on the floor.
+  noun: mark
+  description: The dead body of your crewmate, Mark, is slumped against the wall.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: The keycard is yellow. Not much more to say about it. I mean, it's
-      a keycard.
+    textResponse: 'Mark was the janitor of the Austrodyum Prime, and appears to have
+      been shot in the heart. After careful consideration, you conclude that this
+      is likely the cause of death.  '
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
-    textResponse: You take the keycard.
+    textResponse: You sling Mark over your shoulders. Bringing him with you is definitely
+      a good idea.
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 11400000, guid: 67b6ddc57d501964e8ac5e29e43c687d, type: 2}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: It tastes of plastic. Same as always.
+    textResponse: You give Mark's face a good, long lick. A tear rolls down your
+      cheek as you remember the good times you had with him over the three days you've
+      worked here. He seemed like a chill guy (who wouldn't mind you licking his
+      corpse).
     actionResponse: {fileID: 0}

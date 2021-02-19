@@ -19,7 +19,7 @@ MonoBehaviour:
     exitDescription: The hall leads to a door marked "Navigation".
     valueRoom: {fileID: 11400000, guid: 146903ba8fc97174eb5df0d5139d4a55, type: 2}
   - keyString: armoury
-    exitDescription: The weaponry entrance is to one side of the hall.
+    exitDescription: The armoury entrance is to one side of the hall.
     valueRoom: {fileID: 11400000, guid: f45cadac2eead1c4184d5386701efa90, type: 2}
   - keyString: cargohold
     exitDescription: 'The cargohold is on the other side of the hall. '

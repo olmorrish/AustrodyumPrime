@@ -27,3 +27,6 @@ MonoBehaviour:
       A metalic taste floods your mouth, but it''s not the steel of the blade, it''s
       your own blood, obviously. You fool. '
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: KTHW
+    actionResponse: {fileID: 11400000, guid: cc55f05cbe4c1bf4398c68d2435a6403, type: 2}

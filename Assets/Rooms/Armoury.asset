@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Armoury
   m_EditorClassIdentifier: 
-  description: You enter the armoury.
+  description: This is the armoury.
   roomName: armoury
   exits:
   - keyString: hallway

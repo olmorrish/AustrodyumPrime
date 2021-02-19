@@ -25,11 +25,11 @@ public class RoomNavigation : MonoBehaviour {
     public void AttemptToChangeRooms(string directionNoun) {
         if (exitDictionary.ContainsKey(directionNoun)) {
             currentRoom = exitDictionary[directionNoun];
-            gameMaster.LogStringWithReturn("You go to the " + directionNoun);
+            gameMaster.LogStringWithReturn("You go to the " + directionNoun + ".");
             gameMaster.DisplayRoomText();
         }
         else {
-            gameMaster.LogStringWithReturn("There is no path to the " + directionNoun);
+            gameMaster.LogStringWithReturn("There is no open path to the " + directionNoun + ".");
         }
     }
 

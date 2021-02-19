@@ -11,6 +11,7 @@ public class GameMaster : MonoBehaviour {
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
     public InputAction[] inputActions; //all possible actions, all of which inherit from InputAction abstract class
+    public string cachedRoomOutput; //saves the room text when we want to look around again
 
     // Start is called before the first frame update
     void Awake() {
@@ -28,11 +29,16 @@ public class GameMaster : MonoBehaviour {
         displayText.text = logAsText;
     }
 
+    public void LookAround() {
+        LogStringWithReturn(cachedRoomOutput);
+    }
+
     public void DisplayRoomText() {
         ClearCollectionsForNewRoom();
         UnpackRoom();
         string joinedInteractionDescriptions = string.Join("\n", interactionDescriptionsInRoom.ToArray());
         string combinedText = roomNavigation.currentRoom.description + "\n" + joinedInteractionDescriptions;
+        cachedRoomOutput = combinedText;
         LogStringWithReturn(combinedText);
     }
 

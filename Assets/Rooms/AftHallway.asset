@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: AftHallway
   m_EditorClassIdentifier: 
-  description: "You enter the aft hallway at the back of the ship. \nThere is a sealed
+  description: "This is the aft hallway at the back of the ship. \nThere is a sealed
     door to the navigation room, locked by a yellow card scanner."
   roomName: hallway
   exits:
   - keyString: bedchambers
-    exitDescription: 'There is a room to the bedchambers. '
+    exitDescription: There is a room to the bedchambers.
     valueRoom: {fileID: 11400000, guid: be3ced37a69051c45b033c9b83036c50, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 5f63863c253b3aa4eaacabca7f2186ca, type: 2}
