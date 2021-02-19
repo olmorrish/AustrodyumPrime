@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: cargohold
   exits:
   - keyString: hallway
-    exitDescription: A hallway connects to the room's exit.
+    exitDescription: A <i>hallway</i> connects to the room's exit.
     valueRoom: {fileID: 11400000, guid: 2e74a67876d7b2e428ba3169bb2d0798, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 34516d48c2ec84e44ba7e307ce00b378, type: 2}

@@ -13,21 +13,17 @@ MonoBehaviour:
   m_Name: Display
   m_EditorClassIdentifier: 
   noun: display
-  description: 'A large display stretches across the front of the room. '
+  description: 'A large <i>display</i> stretches across the front of the room. '
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: 'You take a long, hard look at the display. The holographic display
-      responds to touch, and by using it you may be able to access the ship''s database. '
+    textResponse: You take a long, hard look at the display. The holographic display
+      responds to touch, and by using it you may be able to access the ship's database.
+      The display says it needs a retinal scan from the captain to access. This strikes
+      you as odd, since the captain always wears sunglasses - he never took them
+      off.
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: "You press a button on the display, and the captain's voice booms
-      over the speakers in the room. \n\"Whoever find us, the crew is all dead. We
-      didn't think they were capable of this! One got loose, and they overthrew us!
-      We... oh god, they're here. There's one outside the door!\"\nThe recording
-      cuts off abruptly, and the door slams shut behind you.\n\n\"\""
-    actionResponse: {fileID: 11400000, guid: 0d11d33eabc61ae408ccebe3dc36bc8a, type: 2}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
     textResponse: 'You attempt to lick the display, but it''s just a holographic
       projection. You taste nothing but air, disappointment, and the fear of failure
       that your upbringing instilled in you. It''s been a long ride to get here. '
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 0d11d33eabc61ae408ccebe3dc36bc8a, type: 2}

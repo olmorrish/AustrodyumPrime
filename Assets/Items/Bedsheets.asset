@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: bedsheets
   description: Four sleeping quarters are inset into the walls, each containing bland,
-    beige bedsheets.
+    beige <i>bedsheets</i>.
   interactions:
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: The bedsheets are tasteless, but you lick a patch of each one anyways.
-      This will be a good surprise to your crewmates, if they return before the bedsheets
-      dry. Where are they all, anyway?
+    textResponse: The bedsheets are tasteless, but you lick a patch of each one for
+      good measure. This will be a good surprise for your crewmates, if they return
+      before the bedsheets dry. Where did they all go, anyway?
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
+    textResponse: 'The bedsheets are not comfortable, but they are pratical.  '
     actionResponse: {fileID: 0}

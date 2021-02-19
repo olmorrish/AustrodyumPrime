@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Mark
   m_EditorClassIdentifier: 
   noun: mark
-  description: The dead body of your crewmate, Mark, is slumped against the wall.
+  description: The dead body of your crewmate, <i>Mark</i>, is slumped against the
+    wall.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: 'Mark was the janitor of the Austrodyum Prime, and appears to have
@@ -30,3 +31,6 @@ MonoBehaviour:
       worked here. He seemed like a chill guy (who wouldn't mind you licking his
       corpse).
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: UUUSE
+    actionResponse: {fileID: 11400000, guid: 6db95c8644c59e74fbf6d42d1c34aa3b, type: 2}

@@ -12,12 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Bridge
   m_EditorClassIdentifier: 
-  description: With the keypad thoroughly destroyed, you find yourself on the bridge
-    of the Austrodyum Prime.
+  description: 'With the keypad thoroughly destroyed, you find yourself on the bridge
+    of the Austrodyum Prime. The door slams shut behind you. '
   roomName: bridge
-  exits:
-  - keyString: navigation
-    exitDescription: Navigation lies on the other side of the ruined door.
-    valueRoom: {fileID: 11400000, guid: 146903ba8fc97174eb5df0d5139d4a55, type: 2}
+  exits: []
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 42e307225782b58498242b6388a9b884, type: 2}

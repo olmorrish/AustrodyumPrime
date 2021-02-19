@@ -17,7 +17,7 @@ MonoBehaviour:
   roomName: bedchambers
   exits:
   - keyString: hallway
-    exitDescription: There is a door leading out to the aft hallway.
+    exitDescription: There is a door leading out to the aft <i>hallway</i>.
     valueRoom: {fileID: 11400000, guid: c28dd6325d984544f823974193b2869a, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 02e724b9099578642b3e4afa63799036, type: 2}

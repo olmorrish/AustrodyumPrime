@@ -16,7 +16,7 @@ MonoBehaviour:
   roomName: closet
   exits:
   - keyString: navigation
-    exitDescription: Navigation is in the room behind you.
+    exitDescription: The <i>navigation</i> room is connected to the closet.
     valueRoom: {fileID: 11400000, guid: 146903ba8fc97174eb5df0d5139d4a55, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 75a9c1ed213646345b0baac4160fad08, type: 2}

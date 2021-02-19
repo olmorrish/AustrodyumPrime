@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noun: katana
   description: 'The armoury seems to be picked clean, save for the captain''s decorational
-    katana on the wall. '
+    <i>katana</i> on the wall. '
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: Built to comemorate the creation of the penguin-shipping craft,
@@ -23,10 +23,13 @@ MonoBehaviour:
       with a crown - has been laser-etched into the flat of the blade.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: 'You lick the sharp part of the blade, like an absolute bufoon.
-      A metalic taste floods your mouth, but it''s not the steel of the blade, it''s
-      your own blood, obviously. You fool. '
+    textResponse: You lick the sharp edge of the blade, like an absolute bufoon.
+      A metalic taste floods your mouth, but it's not from the steel of the blade.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: KTHW
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: cc55f05cbe4c1bf4398c68d2435a6403, type: 2}
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You put the katana in your backpack. It cuts right through the
+      bottom, because it's a backpack, not a sheathe. It'll have to do.
     actionResponse: {fileID: 11400000, guid: cc55f05cbe4c1bf4398c68d2435a6403, type: 2}

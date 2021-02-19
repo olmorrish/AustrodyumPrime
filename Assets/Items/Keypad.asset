@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Keypad
   m_EditorClassIdentifier: 
   noun: keypad
-  description: The door to the bridge is locked by a keypad.
+  description: The door to the bridge is locked by a <i>keypad</i>.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: 'The keypad requires a 50-digit code to open, which only the captain

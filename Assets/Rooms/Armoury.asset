@@ -16,7 +16,7 @@ MonoBehaviour:
   roomName: armoury
   exits:
   - keyString: hallway
-    exitDescription: A hallway connects to the room's exit.
+    exitDescription: A <i>hallway</i> connects to the room's exit.
     valueRoom: {fileID: 11400000, guid: 2e74a67876d7b2e428ba3169bb2d0798, type: 2}
   interactableObjectsInRoom:
   - {fileID: 11400000, guid: 9681bf7f77b42354fa48f21d015c8f66, type: 2}

@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Journal
   m_EditorClassIdentifier: 
   noun: journal
-  description: A journal lies on the floor, near the entrance to the cage.
+  description: A <i>journal</i> lies on the floor, near the entrance to the cage.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: The journal has the logo of the Austrodyum Prime embossed on the
       cover - a penguin with a crown. It's completely empty except for one page,
-      where in crude barely-legible crayon, someone has written "WE SHALL MARCH AGAIN".
+      where, in crude and barely-legible blue crayon, someone has written "WE SHALL
+      MARCH AGAIN".
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
     textResponse: 'You put the journal in your backpack. You remember that you''ve

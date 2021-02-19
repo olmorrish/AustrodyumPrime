@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Hat
   m_EditorClassIdentifier: 
   noun: hat
-  description: One of the captain's cowboy hats hangs from a peg on the wall. The
-    second peg seems to be missing.
+  description: 'One of the captain''s cowboy <i>hat</i>s hangs from a peg on the
+    wall. '
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: The hat belongs to Dingo, captain of the Austrodyum Prime. It's
-      made of plain, flat leather, with no frills or flair. You wonder briefly where
-      the missing hat went - the captain always kept his two spares together.
+      made of plain, flat leather, with no frills or flair. This is one of his backup
+      hats. Normal people have backup hats.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
     textResponse: The hat has a leathery, rough texture that dries your tounge as

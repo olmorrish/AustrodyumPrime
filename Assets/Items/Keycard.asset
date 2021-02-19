@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Keycard
   m_EditorClassIdentifier: 
   noun: keycard
-  description: A yellow plastic keycard lies on the floor.
+  description: A yellow plastic <i>keycard</i> lies on the floor.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: The keycard is yellow. Not much more to say about it. I mean, it's

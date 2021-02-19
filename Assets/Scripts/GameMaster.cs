@@ -82,12 +82,16 @@ public class GameMaster : MonoBehaviour {
             return verbDictionary[noun];
         }
         else {
-            return "You can't " + verb + " " + noun;
+            return "You can't think of a way to " + verb + " " + noun + ".";
         }
     }
 
     public void LogStringWithReturn(string toAdd) {
         actionLog.Add(toAdd + "\n");
+    }
+
+    public void DeathScene(string textToDisplay) {
+        Debug.Log("End game says: " + textToDisplay);
     }
 
     // Update is called once per frame

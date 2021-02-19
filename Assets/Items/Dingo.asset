@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Dingo
   m_EditorClassIdentifier: 
   noun: dingo
-  description: The dead body of the captain, Dingo, lies facedown in the middle of
-    the room.
+  description: The dead body of the captain, <i>Dingo</i>, lies facedown in the middle
+    of the room.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: Dingo was the captain of the Austrodyum Prime. He appears to be

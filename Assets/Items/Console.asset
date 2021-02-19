@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Console
   m_EditorClassIdentifier: 
   noun: console
-  description: A navigation console sits in the middle of the room.
+  description: A navigation <i>console</i> sits in the middle of the room.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: This type of console is typically used to project 3D images of
@@ -23,6 +23,6 @@ MonoBehaviour:
       like a screensaver icon.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: The metal of the console is cold against your tounge. It is a pleasant
-      sensation.
+    textResponse: The metal of the console is cool against your tounge. It is a pleasant
+      sensation that reminds you of your time at school.
     actionResponse: {fileID: 0}
