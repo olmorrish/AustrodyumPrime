@@ -6,6 +6,6 @@ using UnityEngine;
 public class Inventory : InputAction {
 
     public override void RespondToInput(GameMaster gameMaster, string[] separatedInputWords) {
-        gameMaster.interactableItems.DisplayInventory();
+        gameMaster.interactbleItems.DisplayInventory();
     }
 }

@@ -9,7 +9,7 @@ public class InteractableItems : MonoBehaviour {
     public Dictionary<string, string> takeDictionary = new Dictionary<string, string>();
     public Dictionary<string, string> lickDictionary = new Dictionary<string, string>();
     [HideInInspector] public List<string> nounsInRoom = new List<string>();
-    public List<string> nounsInInventory = new List<string>();
+    private List<string> nounsInInventory = new List<string>();
 
     public List<InteractableObject> useableItemList;
     Dictionary<string, ActionResponse> useDictionary = new Dictionary<string, ActionResponse>();
@@ -68,14 +68,6 @@ public class InteractableItems : MonoBehaviour {
         }
     }
 
-    public InteractableObject[] GetInteractableItemsInInventory() {
-        InteractableObject[] ret = new InteractableObject[nounsInInventory.Count];
-        for(int i=0; i<nounsInInventory.Count; i++) {
-            ret[i] = GetInteractableObjectFromUsablesList(nounsInInventory[i]);
-        }
-        return ret;
-    }
-
     /// <summary>
     /// Called when going to a new room.
     /// </summary>
@@ -121,13 +113,11 @@ public class InteractableItems : MonoBehaviour {
 
     public void LickItem(string[] separatedInput) {
         string noun = separatedInput[1];
-        if(nounsInInventory.Contains(noun) || nounsInRoom.Contains(noun)) {
-            if (lickDictionary.ContainsKey(noun)) {
-                gameMaster.LogStringWithReturn(lickDictionary[noun]);
-            }
-            else {
-                gameMaster.LogStringWithReturn("There is no " + noun + " in your inventory.");
-            }
+        if (lickDictionary.ContainsKey(noun)) {
+            gameMaster.LogStringWithReturn(lickDictionary[noun]);
+        }
+        else {
+            gameMaster.LogStringWithReturn("There is no " + noun + " in your inventory.");
         }
     }
 }
