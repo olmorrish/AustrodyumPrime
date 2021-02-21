@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour {
 
     [HideInInspector] public RoomNavigation roomNavigation;
-    [HideInInspector] public InteractableItems interactbleItems;
+    [HideInInspector] public InteractableItems interactableItems;
     List<string> actionLog = new List<string>();
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
@@ -16,7 +16,7 @@ public class GameMaster : MonoBehaviour {
     // Start is called before the first frame update
     void Awake() {
         roomNavigation = GetComponent<RoomNavigation>();
-        interactbleItems = GetComponent<InteractableItems>();
+        interactableItems = GetComponent<InteractableItems>();
     }
 
     private void Start() {
@@ -50,29 +50,50 @@ public class GameMaster : MonoBehaviour {
     private void PrepareObjectsToTakeOrExamine(Room currrentRoom) {
         if (currrentRoom.interactableObjectsInRoom == null)
             return;
-        foreach(InteractableObject interactable in currrentRoom.interactableObjectsInRoom) {
-            string descriptionNotInInventory = interactbleItems.GetItemsNotInInventory(currrentRoom, interactable);
-            if(descriptionNotInInventory != null) {
+
+        //create list of interactions based on current room
+        foreach (InteractableObject interactable in currrentRoom.interactableObjectsInRoom) {
+
+            //add any items in the room that aren't in inventory to the description of the room
+            string descriptionNotInInventory = interactableItems.GetItemsNotInInventory(currrentRoom, interactable);
+            if (descriptionNotInInventory != null) {
                 interactionDescriptionsInRoom.Add(descriptionNotInInventory); //add the item decriptions to the unpacked description
             }
 
-            foreach(Interaction interactionForInteractable in interactable.interactions) {
-                if(interactionForInteractable.inputAction.keyword.Equals("examine")){
-                    interactbleItems.examineDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+            //add interactions for the objects in the room to the dictionaries for those actions
+            foreach (Interaction interactionForInteractable in interactable.interactions) {
+                if (interactionForInteractable.inputAction.keyword.Equals("examine") && !interactableItems.examineDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.examineDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
                 }
-                if (interactionForInteractable.inputAction.keyword.Equals("take")) {
-                    interactbleItems.takeDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                if (interactionForInteractable.inputAction.keyword.Equals("take") && !interactableItems.takeDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.takeDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
                 }
-                if (interactionForInteractable.inputAction.keyword.Equals("lick")) {
-                    interactbleItems.lickDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                if (interactionForInteractable.inputAction.keyword.Equals("lick") && !interactableItems.lickDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.lickDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
                 }
             }
         }
 
+        //get all interactables in inventory and add them to the dictionaries as well
+        InteractableObject[] inventoryInteractables = interactableItems.GetInteractableItemsInInventory();
+        foreach (InteractableObject interactable in inventoryInteractables) {
+            foreach(Interaction interactionForInteractable in interactable.interactions) {
+                if (interactionForInteractable.inputAction.keyword.Equals("examine") && !interactableItems.examineDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.examineDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
+                if (interactionForInteractable.inputAction.keyword.Equals("take") && !interactableItems.takeDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.takeDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
+                if (interactionForInteractable.inputAction.keyword.Equals("lick") && !interactableItems.lickDictionary.ContainsKey(interactable.noun)) {
+                    interactableItems.lickDictionary.Add(interactable.noun, interactionForInteractable.textResponse);
+                }
+            }
+
+        }
     }
 
     private void ClearCollectionsForNewRoom() {
-        interactbleItems.ClearCollections();
+        interactableItems.ClearCollections();
         interactionDescriptionsInRoom.Clear();
         roomNavigation.ClearExits();
     }
