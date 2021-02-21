@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
-  m_Name: Bridge2
+  m_Name: Penguin
   m_EditorClassIdentifier: 
   description: 'A lone penguin stands between you and the door. The small creature,
     reaching barely as high as your knees, is wearing captain a cowboy hat, and it''s
-    small beady eyes are obscured by dark sunglassed. It holds a revolver, which
+    small beady eyes are obscured by dark sunglasses. It holds a revolver, which
     is pointed directly at your torso. You wonder if anything in your backpack might
     get you out of this bizarre scenario. '
-  roomName: bridge2
+  roomName: penguin
   exits: []
   interactableObjectsInRoom: []

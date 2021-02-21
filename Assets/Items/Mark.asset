@@ -32,5 +32,5 @@ MonoBehaviour:
       corpse).
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: UUUSE
+    textResponse: THROW MORK
     actionResponse: {fileID: 11400000, guid: 6db95c8644c59e74fbf6d42d1c34aa3b, type: 2}

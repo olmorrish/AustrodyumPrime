@@ -82,7 +82,7 @@ public class GameMaster : MonoBehaviour {
             return verbDictionary[noun];
         }
         else {
-            return "You can't think of a way to " + verb + " " + noun + ".";
+            return "You can't think of a way to " + verb + " " + noun + " right now.";
         }
     }
 
@@ -91,7 +91,13 @@ public class GameMaster : MonoBehaviour {
     }
 
     public void DeathScene(string textToDisplay) {
-        Debug.Log("End game says: " + textToDisplay);
+        LogStringWithReturn(textToDisplay);
+        DestroyInputField();
+    }
+
+    private void DestroyInputField() {
+        GetComponent<TextInput>().inputField.enabled = false;
+        //spawn the end game thing
     }
 
     // Update is called once per frame

@@ -26,10 +26,10 @@ MonoBehaviour:
     textResponse: You lick the sharp edge of the blade, like an absolute bufoon.
       A metalic taste floods your mouth, but it's not from the steel of the blade.
     actionResponse: {fileID: 0}
-  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 11400000, guid: cc55f05cbe4c1bf4398c68d2435a6403, type: 2}
   - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
     textResponse: You put the katana in your backpack. It cuts right through the
       bottom, because it's a backpack, not a sheathe. It'll have to do.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: 
     actionResponse: {fileID: 11400000, guid: cc55f05cbe4c1bf4398c68d2435a6403, type: 2}
