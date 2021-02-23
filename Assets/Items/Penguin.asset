@@ -21,5 +21,7 @@ MonoBehaviour:
       I mean, they never even <i>mentioned</i> the cowboy hat.  '
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
-    textResponse: 
-    actionResponse: {fileID: 11400000, guid: 4c3f865fa66e10e4fabc3280aa38bebc, type: 2}
+    textResponse: 'This would probably be a bad idea, right now. You try to imagine
+      what it might be like though. Do penguins taste nice? Maybe a little salty.
+      Like seawater, perhaps. '
+    actionResponse: {fileID: 0}

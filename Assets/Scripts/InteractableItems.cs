@@ -115,6 +115,7 @@ public class InteractableItems : MonoBehaviour {
         string noun = separatedInput[1];
         if (lickDictionary.ContainsKey(noun)) {
             gameMaster.LogStringWithReturn(lickDictionary[noun]);
+            bool actionResult = useDictionary[noun].DoActionResponse(gameMaster); //activate the action response
         }
         else {
             gameMaster.LogStringWithReturn("There is no " + noun + " in your inventory.");

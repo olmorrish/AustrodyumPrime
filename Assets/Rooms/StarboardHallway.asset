@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: StarboardHallway
   m_EditorClassIdentifier: 
-  description: 'You enter the starboard hallway. '
+  description: 'This is the starboard hallway. '
   roomName: starboardhallway
   exits:
   - keyString: navigation

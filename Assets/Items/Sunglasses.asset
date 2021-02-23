@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Sunglasses
   m_EditorClassIdentifier: 
   noun: sunglasses
-  description: A pair of <i>sunglasses</i> sit on the floor.
+  description: A pair of <i>sunglasses</i> sits on the floor.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: 'This is a pair of the captain''s sunglasses. Much like his hat,
@@ -24,7 +24,7 @@ MonoBehaviour:
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
     textResponse: You lick both lenses of the sunglasses. This seems to have cleared
-      a stain that was on the right lens. You certain that the captain would have
+      a stain that was on the right lens. You're certain that the captain would have
       thanked you for doing your part to clean one of his numerous pairs of cool
       shades.
     actionResponse: {fileID: 0}

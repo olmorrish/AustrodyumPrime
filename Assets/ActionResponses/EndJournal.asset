@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredString: penguin
   endText: 'You fish the journal out of your backpack and hold it up to the penguin,
-    shwoing the crayon words: "WE SHALL MARCH AGAIN". You know, deep down, that there
+    showing the crayon words: "WE SHALL MARCH AGAIN". You know, deep down, that there
     is no winning this fight. Your last action, perhaps, was simply an acknowledgement.
-    You understand what must be done, and what this little bird feels, deep inside...'
+    You understand what must be done, and what this little bird feels, deep inside.
+    The loneliness, the pain, the need to survive. You understand...'

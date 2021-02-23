@@ -12,12 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Penguin
   m_EditorClassIdentifier: 
-  description: 'A lone penguin stands between you and the door. The small creature,
-    reaching barely as high as your knees, is wearing captain a cowboy hat, and it''s
-    small beady eyes are obscured by dark sunglasses. It holds a revolver, which
-    is pointed directly at your torso. You wonder if anything in your backpack might
-    get you out of this bizarre scenario. '
+  description: 'The console comes to life, the glowing words of the last captain''s
+    log float in the air: "ALL CREW PRESUMED DEAD - CARGO HAS STAGED A COUP - GOING
+    DOWN WITH THE SHIP - YEEHAW" . The door opens behind you. A lone penguin stands
+    there, between you and the door. The small creature, reaching barely as high
+    as your knees, is wearing a cowboy hat, and it''s eyes are obscured by dark sunglasses.
+    It holds a revolver, which is pointed directly at your torso. You wonder if anything
+    in your backpack might get you out of this bizarre scenario.'
   roomName: penguin
   exits: []
   interactableObjectsInRoom:
+  - {fileID: 11400000, guid: 7141a4d90be668d4eaa4fcc101763ca8, type: 2}
   - {fileID: 11400000, guid: 37baa8b45b07d1049966525126666853, type: 2}

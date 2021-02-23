@@ -12,8 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f32f31f5d9c374aa51e4f80149ca79, type: 3}
   m_Name: Bedchambers
   m_EditorClassIdentifier: 
-  description: These are the bedchambers. The room is quiet, and your crewmates are
-    nowhere to be found.
+  description: 'These are the bedchambers of the zoo freighter named the Austrodyum
+    Prime. Out the window, you see the dark blanket of space. Last you remember,
+    you were a couple of days into a penguin shipping run - it was a small delivery
+    this time, just one animal. The room is quiet, and your crewmates are nowhere
+    to be found. '
   roomName: bedchambers
   exits:
   - keyString: hallway

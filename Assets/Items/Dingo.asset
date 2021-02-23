@@ -19,9 +19,9 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: Dingo was the captain of the Austrodyum Prime. He appears to be
       missing his signature cowboy hat and glasses. After some detective work, you
-      realize that this is because he has actually been beheaded, so it would be
-      somewhat difficult to continue wearing a hat. You also conclude that this was
-      likely the cause of death.
+      realize that this is because he has actually been crudely decapitated, so it
+      would be somewhat difficult to continue wearing a hat. You also conclude that
+      this was likely the cause of death.
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
     textResponse: You give captain Dingo's cowboy boots a good old lick, and your

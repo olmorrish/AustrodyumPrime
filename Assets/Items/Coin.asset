@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c5e3d3b4d5600489c63fa2bf2b8a47, type: 3}
+  m_Name: Coin
+  m_EditorClassIdentifier: 
+  noun: coin
+  description: A <i>coin</i> sits on a desk within reach. You hadn't noticed it before.
+  interactions:
+  - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
+    textResponse: 'It''s a commemorative copper coin celebrating the 5th anniversary
+      of the Prime. The Austrodyum Prime''s logo - a penguin with a crown - is minted
+      on both sides. '
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
+    textResponse: "You lick the coin, tasting all the hands that passed it around
+      over the years. This coin has history. The penguin watches, unflinching.\t"
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You pick up the coin. The penguin waits for your next move.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: d734fe0b04f8b8e42bfe706e60245b14, type: 2}
