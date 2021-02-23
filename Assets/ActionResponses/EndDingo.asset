@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: EndDingo
   m_EditorClassIdentifier: 
   requiredString: penguin
-  endText: 
+  endText: You pull the tiny, headless man out of your backpack. The leather of his
+    boots matches the penguin's hat, and you wonder if perhaps you could make a connection
+    using this shared fashion choice. You puppet the captain's corpse over to the
+    flightless bird, but it sees no similarities. It is of a different kind to you
+    and the captain. It is a survivor...

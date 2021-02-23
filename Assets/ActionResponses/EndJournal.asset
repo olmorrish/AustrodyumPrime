@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: EndJournal
   m_EditorClassIdentifier: 
   requiredString: penguin
-  endText: 
+  endText: 'You fish the journal out of your backpack and hold it up to the penguin,
+    shwoing the crayon words: "WE SHALL MARCH AGAIN". You know, deep down, that there
+    is no winning this fight. Your last action, perhaps, was simply an acknowledgement.
+    You understand what must be done, and what this little bird feels, deep inside...'

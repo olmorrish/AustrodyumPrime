@@ -16,8 +16,10 @@ MonoBehaviour:
   description: The <i>penguin</i> watches you silently, flipper on the trigger.
   interactions:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
-    textResponse: 
+    textResponse: 'It''s a penguin with a gun, a cowboy hat, and sunglasses. A fairly
+      unique scenario. The training didn''t say what to do in this exact scenario.
+      I mean, they never even <i>mentioned</i> the cowboy hat.  '
     actionResponse: {fileID: 0}
   - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
     textResponse: 
-    actionResponse: {fileID: 0}
+    actionResponse: {fileID: 11400000, guid: 4c3f865fa66e10e4fabc3280aa38bebc, type: 2}

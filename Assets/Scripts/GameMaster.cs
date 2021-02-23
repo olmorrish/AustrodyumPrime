@@ -11,7 +11,9 @@ public class GameMaster : MonoBehaviour {
     [HideInInspector] public List<string> interactionDescriptionsInRoom = new List<string>();
     public TextMeshProUGUI displayText;
     public InputAction[] inputActions; //all possible actions, all of which inherit from InputAction abstract class
-    public string cachedRoomOutput; //saves the room text when we want to look around again
+    public string cachedRoomOutput; //saves the room text when we want to look around againv
+    public GameObject endGameObjectPrefab;
+    public TextMeshProUGUI placeHolderText;
 
     // Start is called before the first frame update
     void Awake() {
@@ -97,7 +99,8 @@ public class GameMaster : MonoBehaviour {
 
     private void DestroyInputField() {
         GetComponent<TextInput>().inputField.enabled = false;
-        //spawn the end game thing
+        placeHolderText.text = "Press enter to continue...";
+        Instantiate(endGameObjectPrefab); //changes to next scene if enter is pressed
     }
 
     // Update is called once per frame

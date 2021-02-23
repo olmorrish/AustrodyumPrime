@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: EndBedsheets
   m_EditorClassIdentifier: 
   requiredString: penguin
-  endText: 
+  endText: You walk towards the penguin, hoping to scoop it up in the cozy sheets.
+    This poor creature, alone in the world, stranded in space, might just need a
+    rest. But this is no movie - the small tuxedoed bird has seen the harshness of
+    this world. It's something that a warm blanket just can't fix...
