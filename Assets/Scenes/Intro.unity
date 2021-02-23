@@ -153,8 +153,9 @@ RectTransform:
   - {fileID: 2086340505}
   - {fileID: 318277737}
   - {fileID: 738928751}
+  - {fileID: 1480328878}
   m_Father: {fileID: 1459222525}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -232,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226, y: -50}
-  m_SizeDelta: {x: 1500, y: 739.66797}
+  m_AnchoredPosition: {x: -125.6, y: 40.82}
+  m_SizeDelta: {x: 501.26807, y: 146.42093}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &318277738
 MonoBehaviour:
@@ -254,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: A text-based adventure about penguins in space
+  m_text: A text-based adventure game about penguins in space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e769a7734d82c84697786103ef45c64, type: 2}
   m_sharedMaterial: {fileID: -5250009443539411935, guid: 9e769a7734d82c84697786103ef45c64,
@@ -283,12 +284,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 45
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -321,13 +322,13 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -116.40637, y: 162.81265, z: 984.89307, w: 381.05096}
+  m_margin: {x: 0.40036258, y: 2.5964143, z: 3.7166536, w: 0.5374075}
   m_textInfo:
     textComponent: {fileID: 318277738}
-    characterCount: 46
+    characterCount: 51
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 7
+    wordCount: 8
     linkCount: 0
     lineCount: 2
     pageCount: 1
@@ -389,8 +390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 226, y: -141}
-  m_SizeDelta: {x: 1500, y: 739.66797}
+  m_AnchoredPosition: {x: -125.61999, y: -89.5}
+  m_SizeDelta: {x: 501.23547, y: 114.275055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738928752
 MonoBehaviour:
@@ -440,12 +441,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
+  m_fontSize: 45
   m_fontSizeBase: 50
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 45
   m_fontStyle: 2
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -478,7 +479,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -116.40637, y: 162.81265, z: 984.89307, w: 381.05096}
+  m_margin: {x: 2.2944393, y: 1.0973761, z: -0.972436, w: -2.998322}
   m_textInfo:
     textComponent: {fileID: 738928752}
     characterCount: 20
@@ -541,7 +542,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e04b16a45081dd844a43cbc55e520e88, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -650,6 +651,7 @@ GameObject:
   - component: {fileID: 1001531404}
   - component: {fileID: 1001531403}
   - component: {fileID: 1001531402}
+  - component: {fileID: 1001531405}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -722,6 +724,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1001531405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001531401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 50
+  m_RefResolutionX: 1000
+  m_RefResolutionY: 600
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &1449562991
 GameObject:
   m_ObjectHideFlags: 0
@@ -856,7 +878,7 @@ Canvas:
   m_GameObject: {fileID: 1459222521}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1001531403}
   m_PlaneDistance: 100
   m_PixelPerfect: 1
@@ -879,7 +901,6 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1480328878}
   - {fileID: 271280578}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -938,29 +959,30 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                     `::.`````\\                                 \r\n                     
-    .+ssosyhys+.                              \r\n                        .yhsymmmmh-                            
-    \r\n                         /NmmmNNNmo`                            \r\n                        
-    /mmmmmmdy+-                            \r\n                        `/yyhysso+:--`                         
-    \r\n                        ://////:/oys/:.                         \r\n                      
-    `::----....:ydyo`                        \r\n                       ----...`````.smdo.                      
-    \r\n                      `-.....```````.hdys:`                     \r\n                     
-    -.......```````/hyhho.                    \r\n                     `-..........````.yydddh/`                 
-    \r\n                     .--..............:hhdsshs-                 \r\n                  
-    `/+-------..........+hhys+++/`               \r\n                  -++/---------........-+ys+o+//o.             
-    \r\n                 ://+/---:::-----.......-oo.-/+//o`             \r\n               
-    -///+/::::::::---........-o: `-////.            \r\n               -///+o/:::::::::---........:+  
-    .////.           \r\n              .////++/:::////:::---........o    `///+`         
-    \r\n              ////++-`::::////:::---.......+     `///+          \r\n            
-    .oo//+-  :::::///:::----.....-/      `/+o:         \r\n             .yds+:  
-    -:::::::::------....--       `/ys`        \r\n              ydhs`   `:::--:::--------...:`       
-    .yy.        \r\n              .++`     -:----:::-------...-          /h`       
-    \r\n                       `:::::::::::----...`           .         \r\n                       
-    .://++++///::--..`                      \r\n                         -+oooossoo/::-./                      
-    \r\n                         :yhdhsosoyo:--+y/                      \r\n                        
-    +mNNNo:/yhdho/hhh/`                    \r\n                     `-/ydmNNm-:ohmmd:/yhhh+.                  
-    \r\n                   `:yhdddhyhdddddhs-                           \r\n                 
-    `:+hyso--syoo/-`                              \r\n                   `.`    `"
+  m_text: " \n \n                     `::.`````\\                                
+    \r\n                      .+ssosyhys+.                              \r\n                       
+    .yhsymmmmh-                             \r\n                         /NmmmNNNmo`                           
+    \r\n                         /mmmmmmdy+-                            \r\n                       
+    `/yyhysso+:--`                          \r\n                        ://////:/oys/:.                        
+    \r\n                       `::----....:ydyo`                        \r\n                      
+    ----...`````.smdo.                       \r\n                      `-.....```````.hdys:`                    
+    \r\n                      -.......```````/hyhho.                    \r\n                    
+    `-..........````.yydddh/`                  \r\n                     .--..............:hhdsshs-                
+    \r\n                   `/+-------..........+hhys+++/`               \r\n                 
+    -++/---------........-+ys+o+//o.              \r\n                 ://+/---:::-----.......-oo.-/+//o`            
+    \r\n                -///+/::::::::---........-o: `-////.            \r\n              
+    -///+o/:::::::::---........:+   .////.           \r\n              .////++/:::////:::---........o   
+    `///+`          \r\n              ////++-`::::////:::---.......+     `///+         
+    \r\n             .oo//+-  :::::///:::----.....-/      `/+o:         \r\n            
+    .yds+:   -:::::::::------....--       `/ys`        \r\n              ydhs`  
+    `:::--:::--------...:`        .yy.        \r\n              .++`     -:----:::-------...-         
+    /h`        \r\n                       `:::::::::::----...`           .        
+    \r\n                        .://++++///::--..`                      \r\n                        
+    -+oooossoo/::-./                       \r\n                         :yhdhsosoyo:--+y/                     
+    \r\n                         +mNNNo:/yhdho/hhh/`                    \r\n                    
+    `-/ydmNNm-:ohmmd:/yhhh+.                   \r\n                   `:yhdddhyhdddddhs-                          
+    \r\n                  `:+hyso--syoo/-`                              \r\n                  
+    `.`    `"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9e769a7734d82c84697786103ef45c64, type: 2}
   m_sharedMaterial: {fileID: -5250009443539411935, guid: 9e769a7734d82c84697786103ef45c64,
@@ -989,8 +1011,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1027,15 +1049,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -13.31781, y: -454.198, z: 0, w: -225.28174}
+  m_margin: {x: -3.7974901, y: -2.1317222, z: 15.866962, w: -2.6391923}
   m_textInfo:
     textComponent: {fileID: 1480328876}
-    characterCount: 2139
+    characterCount: 2143
     spriteCount: 0
-    spaceCount: 1379
+    spaceCount: 1383
     wordCount: 82
     linkCount: 0
-    lineCount: 33
+    lineCount: 35
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -1072,13 +1094,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1459222525}
-  m_RootOrder: 0
+  m_Father: {fileID: 271280578}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 310, y: -273}
-  m_SizeDelta: {x: 1100, y: 739.66797}
+  m_AnchoredPosition: {x: 294, y: -108}
+  m_SizeDelta: {x: 696.37573, y: 783.0049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2086340504
 GameObject:
@@ -1114,8 +1136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 103, y: 130.2}
-  m_SizeDelta: {x: 1500, y: 739.66797}
+  m_AnchoredPosition: {x: -121, y: 175}
+  m_SizeDelta: {x: 491.989, y: 121.95343}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086340506
 MonoBehaviour:
@@ -1165,12 +1187,12 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 100
+  m_fontSize: 82.75
   m_fontSizeBase: 100
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 20
+  m_fontSizeMax: 100
   m_fontStyle: 0
   m_textAlignment: 514
   m_characterSpacing: 0
@@ -1203,7 +1225,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 103.92297, z: 858.9999, w: 152.42035}
+  m_margin: {x: -4.209669, y: -2.268372, z: -0.33301932, w: 2.5110438}
   m_textInfo:
     textComponent: {fileID: 2086340506}
     characterCount: 16
