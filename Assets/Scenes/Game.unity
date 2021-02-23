@@ -223,6 +223,8 @@ MonoBehaviour:
   useableItemList:
   - {fileID: 11400000, guid: 5f63863c253b3aa4eaacabca7f2186ca, type: 2}
   - {fileID: 11400000, guid: ca12d59eaf7950a4993601ce7fd1c270, type: 2}
+  - {fileID: 11400000, guid: e6c49d83824b08b4093698606cebd83f, type: 2}
+  - {fileID: 11400000, guid: 75a9c1ed213646345b0baac4160fad08, type: 2}
 --- !u!1 &172454111
 GameObject:
   m_ObjectHideFlags: 0

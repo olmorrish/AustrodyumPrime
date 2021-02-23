@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0609d640e1c881e42a192e10987fda5c, type: 3}
-  m_Name: SunglassesUse
+  m_Script: {fileID: 11500000, guid: ed92685a5bd805f4ca8c079ffe3cdb0d, type: 3}
+  m_Name: EndJournal
   m_EditorClassIdentifier: 
-  requiredString: bridge
-  roomToChangeTo: {fileID: 11400000, guid: 8313f61a7d0fede4c9356735d315f86c, type: 2}
+  requiredString: penguin
+  endText: 

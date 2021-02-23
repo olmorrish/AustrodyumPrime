@@ -25,3 +25,10 @@ MonoBehaviour:
     textResponse: The hat has a leathery, rough texture that dries your tounge as
       you scrape it over the surface of the western headwear.
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You put on the hat. You mutter "<i>yeehaw pardner</i>" to yourself.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 66858e91c248fd243aeb03893ad5f129, type: 2}
+    textResponse: The hat has a leathery, rough texture that dries your tounge as
+      you scrape it over the surface of the western headwear.
+    actionResponse: {fileID: 0}

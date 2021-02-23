@@ -32,3 +32,6 @@ MonoBehaviour:
     textResponse: You put Dingo in your backpack. You stop briefly to wonder how
       you managed that, but you decide not to think too much about it.
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: 5fb2846e40be6f24b929209130f77d71, type: 2}

@@ -24,3 +24,9 @@ MonoBehaviour:
   - inputAction: {fileID: 11400000, guid: a509c44107124194fb9edfa6a1721a58, type: 2}
     textResponse: 'The bedsheets are not comfortable, but they are pratical.  '
     actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 5e8e6e353ed36ef47802a564b5081953, type: 2}
+    textResponse: You grab the bedsheets and fold them up in your bag.
+    actionResponse: {fileID: 0}
+  - inputAction: {fileID: 11400000, guid: 41376f67e0a9acf4db7b4add02805d1c, type: 2}
+    textResponse: 
+    actionResponse: {fileID: 11400000, guid: fdb8f9e74d05f394aa1483858c9d1ec2, type: 2}
