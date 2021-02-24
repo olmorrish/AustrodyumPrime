@@ -8,8 +8,11 @@ public class EndGameResponse : ActionResponse {
     [TextArea] public string endText;
 
     public override bool DoActionResponse(GameMaster gameMaster) {
-        gameMaster.DeathScene(endText);
-        return true;
+        if (gameMaster.roomNavigation.currentRoom.roomName.Equals(requiredString)) {
+            gameMaster.DeathScene(endText);
+            return true;
+        }
+        return false;
     }
 
 }
